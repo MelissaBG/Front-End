@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="CSS/estilocss.css" />
+    <title>Rick and Morty API</title>
+  </head>
+  <body>
+    <heder>
+      <nav class="cabecalho"></nav>
+    </heder>
+    <main class="layout">
+      <section class="titulo">
+        <h1>The Rick and Morty API</h1>
+      </section>
+
+      <section class="showcase">
+        <div class="card_busca">
+          <input id="id_personagem" type="number" />
+          <button onclick="buscarPersonagem()">Buscar</button>
+        </div>
+
+        <div class="card_personagem">
+          <img width="120px" id="imagem_personagem" src="" alt="" />
+
+          <div id="resultado"></div>
+        </div>
+      </section>
+    </main>
+    <footer class="rodape">
+    </footer>
+  </body>
+</html>
+<script>
+  function buscarPersonagem() {
+    const idPersonagem = document.getElementById("id_personagem").value;
+
+    $.ajax({
+      url: "https://rickandmortyapi.com/api/character/" + idPersonagem,
+      type: "get",
+      success: function (result) {
+        document.getElementById("imagem_personagem").src = result.image;
+        console.log(result);
+        const textoResultado = `
+                         <ul>
+                             <li>${result.name}</li>
+                             <li>${result.status}</li>
+                         </ul>
+                `;
+        document.getElementById("resultado").innerHTML = textoResultado;
+      },
+    });
+  }
+</script>
