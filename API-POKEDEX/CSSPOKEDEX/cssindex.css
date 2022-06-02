@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Satisfy&display=swap');
+/*Reset*/
+html, body{
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/**Layout*/
+#site-grid-container {
+    background-color: rgb(141, 148, 148);
+    height: 100vh;
+
+    display: grid;
+
+    grid-template-rows: 0.2fr 1fr 0.2fr;
+    grid-template-columns: 0.3fr 1fr;
+
+    grid-template-areas: 
+    "header header"
+    "aside main"
+    "footer footer";
+}
+
+.area{
+    background-color: rgb(212, 209, 209);
+    margin: 2px;
+}
+.header-grid-item{
+    grid-area: header;
+    background-color: #151515;;
+}
+.aside-grid-item{
+    grid-area: aside;
+    background-color: #151515;;
+}
+.main-grid-item{
+    grid-area: main;
+    overflow-x: auto;
+}
+.footer-grid-item{
+    grid-area: footer;
+    background-color:#151515;
+}
+/**Areas*/
+.aside-flex-container {
+    display: flex;
+    flex-direction: column;
+}
+.main-flex-cotainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pokedex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#ffcc00;
+    height: 400px;
+    width: 220px;
+    border-radius: 10px;
+    border: 10px solid #0074bd;
+    box-shadow: -5px 5px 0px 5px #043570,inset -3px 3px 0px 3px rgb(0 0 0 / 25%);
+}
+#container_tipos{
+  display: flex;
+  flex-direction: row;
+}
+#container_golpes{
+  overflow-y: auto;
+  height: 70px;
+  background-color: rgb(219, 219, 219);
+  
+}
+
+#container_golpes::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+#container_golpes::-webkit-scrollbar-track {
+  background: #ac4a4a;
+}
+
+/* Handle */
+#container_golpes::-webkit-scrollbar-thumb {
+  background: rgb(243, 8, 8);
+  border-radius: 50%;
+  height: 10px;
+}
+
+/* Handle on hover */
+#container_golpes::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.tipoBox{
+  background-color: grey;
+  padding: 3px;
+  border: solid black 2px;
+  border-radius: 15px;
+  margin: 3px;
+  color: white;
+}
+.cor-grass{
+  background-color: green;
+}
+.cor-poison{
+  background-color: purple;
+}
+.visor {
+    margin-top: 10px;
+    height: 200px;
+    width: 80%;
+    background-color: rgb(157, 202, 202);
+    border: 5px solid #0074bd;
+    box-shadow: 4px 4px 5px 0px rgb(0 0 0 / 71%), inset 1px 1px 7px 3px rgb(0 0 0 / 35%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pesquisa{
+    margin-top: 15px;
+    height: 10%;
+    width: 85%;
+}
+.buscar{
+        width: 50%;
+        height: 40px;
+        margin: 0.5rem 1rem 0 1rem;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        text-shadow: 2px 2px #000000;
+        border-color: #3498DB;
+        text-align: center;
+        box-shadow: 2px 2px #000000;
+        color: rgb(254, 225, 112);
+        margin-bottom: 10px;
+}
+/*Menu de navegação*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #151515;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* cor do botão ao passar o mouse */
+li a:hover {
+  
+  color: white;
+}
+/* cards */
+*{ 
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #f0f0f0;
+}
+
+body {
+  color:gray;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 1px;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn {
+  background-color: white;
+  border: 1px solid; 
+  padding: 3px;
+  padding-bottom: 3px;
+}
+
+.btn--block {
+  display: block;
+  width: 100%;
+}
+ 
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards__item {
+  display: flex;
+  padding: 30px;
+  width: 50%;
+}
+
+.card {
+  background-color: white;
+  border-radius: 1px;
+  box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card__content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 3px;
+  margin-bottom: 15px;
+}
+
+.card__image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.25px;
+  border-top-right-radius: 0.25px;
+  position: relative;
+	display: block;
+    padding-top: 56%; 
+
+
+}
+
+.card__image--RickandMorty {
+  background-image: url(https://www.freepnglogos.com/uploads/rick-and-morty-png/rick-and-morty-portal-moon-mod-download-35.png);
+}
+
+.card__image--pokedex {
+  background-image: url(https://www.freepnglogos.com/uploads/pokemon-logo-png-0.png);
+}
+
+
+
+
+
+  

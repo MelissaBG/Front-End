@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cssindex.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <script src="JS/buscarPersonagemPokedex.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Pokedex</title>
+</head>
+<body>
+    <div id="site-grid-container">
+        <div class="area header-grid-item"></div>
+        <div class="area aside-grid-item aside-flex-container">
+            <ul>
+            <li><a href="#indexprincipal">Home</a></li>
+            <li><a href="#rickandmorty">Rick and Morty</a></li>
+            <li><a href="#pokedex.html">Pokedex</a></li>
+        </ul>
+        </div>
+        <div class="area main-grid-item main-flex-cotainer">
+           
+
+            <div class="pokedex">
+
+
+                <div class="visor">
+                    <img src="" id="imagem_personagem" alt="">
+                </div>
+                
+                <input class="pesquisa" id="nome_personagem" type="text" placeholder="Digite um pokemon">
+                <div class="descricao">
+                <div id="resultado">
+                    <div id="container_nome"></div>
+                    <div id="container_tipos"></div>
+                    <div id="container_golpes"></div>
+                </div>
+            </div>
+                <button class="buscar" onclick="buscarPersonagem()">Buscar</button> 
+            </div>
+        </div>
+        <div class="area footer-grid-item"></div>
+    </div>
+</body>
+</html>

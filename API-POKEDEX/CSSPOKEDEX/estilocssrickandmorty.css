@@ -1,0 +1,63 @@
+/*CSS CARDS*/
+    .card_personagem {
+        background-color: rgb(207, 204, 204);
+        border: solid gray 2px;
+        width: fit-content;
+
+    }
+
+    .card_busca {
+        background-color: rgb(207, 204, 204);
+        border: solid gray 2px;
+        width: fit-content;
+        margin-bottom: 5px;
+    }
+/*Cabeçalho*/
+.cabecalho{
+    display:flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 50px;
+    border-bottom:1px solid transparent;
+    position:relative;
+    z-index: 2;
+    background-color: rgb(35, 37, 37);
+}
+/*Titulo(Section)*/
+.titulo{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+    height: calc(50vh - 60px);
+    text-align: center;
+    position: relative;
+    background-color: rgb(225, 231, 229);
+}
+.showcase{
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 4.5rem 0px;
+    background: rgb(36, 40, 47);
+    min-height: calc(50vh - 60px);
+}
+.rodape{
+    display:flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 60px;
+    border-bottom:1px solid transparent;
+    position:relative;
+    z-index: 2;
+    background-color: rgb(35, 37, 37);
+}

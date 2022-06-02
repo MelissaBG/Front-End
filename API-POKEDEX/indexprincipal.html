@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/cssindex.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <title>Pokedex</title>
+  </head>
+  <body>
+    <div id="site-grid-container">
+      <div class="area header-grid-item"></div>
+      <div class="area aside-grid-item aside-flex-container">
+       <ul>
+        <li><a href="#indexprincipal">Home</a></li>
+        <li><a href="#rickandmorty">Rick and Morty</a></li>
+        <li><a href="#pokedex">Pokemon</a></li>
+      </ul>
+      </div>
+
+      <div class="area main-grid-item">
+      <section class="cards">
+        <div class="cards__item">
+          <div class="card">
+            <div class="card__image card__image--RickandMorty"></div>
+            <div class="card__content">
+              <div class="card__title">Rick and Morty</div>
+              <p class="">
+                Acompanhe malucas viagens no tempo-espaço e por universos
+                paralelos com Rick, um cientista com problemas com a bebida, e
+                seu neto Morty, um adolescente não tão brilhante quanto o avô.
+              </p>
+              <button onclick="window.location.href='/rickandmorty.html'" class="btn btn--block card__btn">Clique Aqui</button>
+            </div>
+          </div>
+        </div>
+        <div class="cards__item">
+          <div class="card">
+            <div class="card__image card__image--pokedex"></div>
+            <div class="card__content">
+              <div class="card__title">Pokedex</div>
+              <p class="card__text">
+                Pokemon conta a história de Ash Ketchum, um garoto da cidade de
+                Pallet que iniciou, aos dez anos de idade, sua jornada para ser
+                um mestre. Ao seu lado, ninguém estava menos que Pikachu, futuro
+                ícone-mor da franquia que, no começo, não gostava tanto de Ash.
+              </p>
+              <button onclick="window.location.href='/pokedex.html'" class="btn btn--block card__btn">Clique Aqui</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+      <div class="area footer-grid-item"></div>
+    </div>
+  </body>
+</html>
