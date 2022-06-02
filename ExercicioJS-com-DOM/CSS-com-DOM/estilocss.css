@@ -1,0 +1,87 @@
+body, html{
+    height: 100vh;
+    margin: 0px;
+    font-family: Arial;
+}
+/*Tipografia*/
+h1,
+h2,
+h3{
+   max-width: 60ch;
+   margin:20px 0 30px 0;
+   font-weight: bold;
+   color: rgb(7, 7, 7);
+
+}
+/*Layout*/
+.site{
+    height: 100%;
+
+}
+.autor{
+    text-align: center;
+    padding-top: 2%;
+}
+.local{
+    text-align: center;
+    padding-top: 3%;
+}
+
+nav{
+  background-color: rgb(59, 56, 56);
+}
+main{
+    margin-top: 30px;
+    height: 70%;
+    padding: 15px;
+}
+header{
+    height: 10%;
+    padding-top: 9px;
+    background: rgb(59, 56, 56) ;
+    color: rgb(226, 217, 217);
+    align-items: center;
+    padding-left: 20px;
+}
+section{
+    margin-bottom: 0px;
+    padding: 10px;
+    background-color: white;
+}
+footer{
+    height: 20%;
+    background-color: rgb(59, 56, 56);
+    text-align: center;
+}
+/*compnentes*/
+nav a{
+    text-decoration: none;
+    color: rgb(98, 95, 95);
+    margin-right: 20px;
+    background-color:rgb(59, 56, 56);
+   
+}
+nav a:hover{
+    color:rgb(98, 95, 95);
+}
+
+.btn{
+    align-self: center;
+    border-radius: 20px;
+    padding: 6px 15px 10px 13px;
+    background: rgb(98, 95, 95);
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.5s;
+    padding-top: 10;
+    margin-top: 90px;
+    display: inline-block;
+    text-decoration: none;
+}
+.btn:hover{
+    background: rgb(59, 56, 56);
+    color: black;
+    position: relative;
+    top: -5px;
+
+}
